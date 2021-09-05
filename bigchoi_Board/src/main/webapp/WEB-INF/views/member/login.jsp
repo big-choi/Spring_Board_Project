@@ -31,6 +31,10 @@
 			<div id="formFooter">
 				<a class="underlineHover" href="#">Forgot Password?</a>
 			</div>
+			<!-- 회원가입 -->
+			<div id="formFooter">
+				<a class="underlineHover" href="/member/join">회원가입</a>
+			</div>
 
 		</div>
 	</div>
