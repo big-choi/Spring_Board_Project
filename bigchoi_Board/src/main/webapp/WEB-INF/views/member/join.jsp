@@ -43,7 +43,11 @@
 				<input type="text" placeholder="주소를 입력해주세요" name="address"
 				required style="width:300px;">
 				<button type="button" class="searchAddress" style="width:100px;">주소찾기</button>
-				<input type="text" placeholder="주소를 입력해주세요" name="address"
+				<br>
+				<input type="text" placeholder="" name="address2"
+				required style="width:300px;">
+				
+				<input type="text" placeholder="" name="address3"
 				required>
 				
 			<p>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SQL 호출 -->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bigchoi.mapper.MemberMapper">
+	<!-- 회원가입 SQL -->
+	<insert id="MemberJoin">
+		<!-- // JDBC 코드와 유사함, 마이바티스 코드는 아님… String selectPerson = "SELECT * FROM 
+			PERSON WHERE ID=?"; PreparedStatement ps = conn.prepareStatement(selectPerson); 
+			ps.setInt(1,id); -->
+		insert into member_table
+		values(#{id},#{password},#{name},#{email},#{address1},#{address2},#{address3},0,
+		sysdate, 500000, 1000);
+	</insert>
+
+</mapper>
