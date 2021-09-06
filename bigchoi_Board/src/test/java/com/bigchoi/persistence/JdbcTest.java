@@ -21,8 +21,8 @@ public class JdbcTest {
 	public void testConnection() {
 		try(Connection conn = DriverManager.getConnection(
 				"jdbc:oracle:thin:@localhost:1521:xe",
-				"book_ex",
-				"book_ex")){
+				"bigchoi",
+				"1234")){
 			System.out.println(conn);
 		} catch (Exception e) {
 			fail(e.getMessage());
