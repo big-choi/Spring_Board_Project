@@ -13,20 +13,20 @@ import com.bigchoi.model.MemberVO;
 public class MemberMapperTests {
 
 	@Autowired
-	private MemberMapper membermapper; // DI
+	private MemberMapper membermapper; // MemberMapper DI
 	
 	// 회원가입 쿼리 테스트
 	@Test
-	public void MemberJoin() throws Exception {
+	public void memberJoin() throws Exception {
 		MemberVO member = new MemberVO();
 		
-		member.setId("test");
-		member.setPassword("test");
-		member.setName("test");
-		member.setEmail("test");
-		member.setAddress1("test");
-		member.setAddress2("test");
-		member.setAddress3("test");
+		member.setId("test2");
+		member.setPassword("test2");
+		member.setName("test2");
+		member.setEmail("test2");
+		member.setAddress1("test2");
+		member.setAddress2("test2");
+		member.setAddress3("test2");
 		
 		membermapper.memberJoin(member); //쿼리 실행
 	}

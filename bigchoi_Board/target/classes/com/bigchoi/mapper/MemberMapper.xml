@@ -5,7 +5,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bigchoi.mapper.MemberMapper">
 	<!-- 회원가입 SQL -->
-	<insert id="MemberJoin">
+	<insert id="memberJoin">
 		<!-- // JDBC 코드와 유사함, 마이바티스 코드는 아님… String selectPerson = "SELECT * FROM 
 			PERSON WHERE ID=?"; PreparedStatement ps = conn.prepareStatement(selectPerson); 
 			ps.setInt(1,id); -->
