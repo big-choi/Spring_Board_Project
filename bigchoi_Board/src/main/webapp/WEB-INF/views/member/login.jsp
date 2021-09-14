@@ -20,10 +20,10 @@
 
 			<!-- Login Form -->
 			<form>
-			<h3 style="text-align: center;">Login</h3>
+			<h3 style="text-align: center;">환영합니다</h3>
 				<input type="text" id="login" class="fadeIn second" name="login"
-					placeholder="login"> <input type="text" id="password"
-					class="fadeIn third" name="login" placeholder="password"> <input
+					placeholder="ID"> <input type="text" id="password"
+					class="fadeIn third" name="login" placeholder="Password"> <input
 					type="submit" class="fadeIn fourth" value="Log In">
 			</form>
 

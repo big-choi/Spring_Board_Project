@@ -10,11 +10,12 @@ import com.bigchoi.model.MemberVO;
 public class MemberServiceImpl implements MemberService {
 	
 	@Autowired
-	MemberMapper memberMapper;
+	MemberMapper membermapper;
 	
 	@Override
 	public void memberJoin(MemberVO member) throws Exception{
-		memberMapper.memberJoin(member);
+		
+		membermapper.memberJoin(member);
 	}
 
 }

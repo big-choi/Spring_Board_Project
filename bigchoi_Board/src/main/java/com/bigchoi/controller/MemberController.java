@@ -17,6 +17,20 @@ public class MemberController {
 
 	@Autowired
 	private MemberService memberService;
+	
+	// 회원가입
+		@RequestMapping(value = "/join", method = RequestMethod.POST)
+		public String joinPOST(MemberVO member) throws Exception {
+
+			log.info("join 진입");
+
+			// 회원가입 서비스 진행
+			memberService.memberJoin(member);
+
+			log.info("joinService 성공");
+
+			return "redirect:/mainPage";
+		}
 
 	// 로그인 페이지 이동
 	@RequestMapping(value = "login", method = RequestMethod.GET)
@@ -32,18 +46,6 @@ public class MemberController {
 		log.info("회원가입 페이지 진입");
 	}
 
-	// 회원가입
-	@RequestMapping(value = "/join", method = RequestMethod.POST)
-	public String joinPOST(MemberVO member) throws Exception {
-
-		log.info("join 진입");
-
-		// 회원가입 서비스 진행
-		memberService.memberJoin(member);
-
-		log.info("joinService 성공");
-
-		return "redirect:/mainPage";
-	}
+	
 
 }
