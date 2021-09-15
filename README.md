@@ -19,7 +19,8 @@
 
 
 ## 📌 2. UI 정의서
-![회원가입](https://user-images.githubusercontent.com/80212139/133198980-6aa9556a-511d-428f-b9e2-fd69800829a9.jpg)
+![회원가입](https://user-images.githubusercontent.com/80212139/133359536-c09f9d50-c886-459f-a2ed-a7cd80d83b81.PNG)
+
 
 
 
