@@ -8,14 +8,20 @@ import com.bigchoi.model.MemberVO;
 
 @Service
 public class MemberServiceImpl implements MemberService {
-	
+
 	@Autowired
 	MemberMapper membermapper;
+
+	@Override
+	public void memberJoin(MemberVO member) throws Exception {
+
+		membermapper.memberJoin(member);
+	}
 	
 	@Override
-	public void memberJoin(MemberVO member) throws Exception{
+	public int idCheck(String id) throws Exception {
 		
-		membermapper.memberJoin(member);
+		return membermapper.idCheck(id);
 	}
 
 }
