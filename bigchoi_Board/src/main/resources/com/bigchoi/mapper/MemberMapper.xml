@@ -9,8 +9,15 @@
 		<!-- // JDBC 코드와 유사함, 마이바티스 코드는 아님… String selectPerson = "SELECT * FROM 
 			PERSON WHERE ID=?"; PreparedStatement ps = conn.prepareStatement(selectPerson); 
 			ps.setInt(1,id); -->
-		insert into member_table values(#{id},#{password},#{name},#{email},#{address1},#{address2},#{address3},0,
+		insert into member_table
+		values(#{id},#{password},#{name},#{email},#{address1},#{address2},#{address3},0,
 		sysdate, 500000, 1000)
 	</insert>
 
+	<!-- 아이디 중복 체크 -->
+	<select id="idCheck" resultType="int">
+        SELECT COUNT(*) FROM MEMBER_TABLE WHERE id= #{id}
+    </select>
 </mapper>
+
+
