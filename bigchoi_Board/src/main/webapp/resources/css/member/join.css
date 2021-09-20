@@ -108,10 +108,3 @@ button:hover {
 	color: red;
 	display: none;
 }
-
-.correct{
-    color : green;
-}
-.incorrect{
-    color : red;
-}
