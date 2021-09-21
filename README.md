@@ -20,8 +20,9 @@
 
 ## 📌 2. UI 정의서
 ![회원가입](https://user-images.githubusercontent.com/80212139/133359536-c09f9d50-c886-459f-a2ed-a7cd80d83b81.PNG)
-
-
+아이디 중복검사의 주요 기능은 jQuery의 ajax 이용하여 구현하였습니다.
+![이메일 인증](https://user-images.githubusercontent.com/80212139/134183163-709de4ec-644b-4c43-ba5d-0943a6d3e385.png)
+javax.mail, spring-context-support 라이브러리를 등록하여 이메일 인증 기능을 구현하였습니다.
 
 
 
